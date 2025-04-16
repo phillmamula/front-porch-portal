@@ -1,3 +1,12 @@
+body {
+  font-size: 16px;
+  line-break: 1.2em;
+  background: #FAFA23;
+  color: #159023;
+}
+a { text-decoration: underlinee; }
+a:hover { color: #FA0; }
+
 /* Base styles */
 .portal-navigation ul {
   list-style: none;

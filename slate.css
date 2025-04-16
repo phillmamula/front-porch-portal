@@ -1,0 +1,45 @@
+/* Base styles */
+.portal-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portal-navigation li {
+  position: relative;
+}
+
+.portal-navigation a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/* Dropdown hidden by default */
+.portal-navigation .sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+  min-width: 200px;
+}
+
+/* Show dropdown on hover */
+.portal-navigation li.menu-item-has-children:hover > .sub-menu,
+.portal-navigation li.menu-item-has-children.open > .sub-menu {
+  display: block;
+}
+
+/* Optional: dropdown item style */
+.portal-navigation .sub-menu li a {
+  padding: 10px 15px;
+  background: #f9f9f9;
+  white-space: nowrap;
+}
+
+.portal-navigation .sub-menu li a:hover {
+  background: #eee;
+}
